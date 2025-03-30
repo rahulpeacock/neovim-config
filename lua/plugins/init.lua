@@ -1,4 +1,4 @@
 return {
   "nvim-lua/plenary.nvim",
-  -- "christoomey/vim-tmux-navigator", -- tmux & split window navigation, who need it when you're not using tmux splits
+  "christoomey/vim-tmux-navigator", -- tmux & split window navigation
 }
