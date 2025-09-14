@@ -18,8 +18,9 @@
 - [x] todo-comments
 - [ ] subsititution
 - [ ] surround
-- [ ] lsp
-- [ ] trouble
+- [x] mason
+- [x] lsp config
+- [x] trouble
 - [ ] formatting
 - [ ] linting
 - [ ] git integration
