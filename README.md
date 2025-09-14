@@ -14,5 +14,19 @@
 - [x] indent blankline
 - [x] nvim-cmp
 - [x] autopairs
-- [ ] comments
-- [ ] 
+- [x] comments
+- [x] todo-comments
+- [ ] subsititution
+- [ ] surround
+- [ ] lsp
+- [ ] trouble
+- [ ] formatting
+- [ ] linting
+- [ ] git integration
+
+
+### Unused plugins
+
+- ui.lua
+- neo-tree.lua
+- colorscheme.lua
