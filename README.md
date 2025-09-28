@@ -31,3 +31,9 @@
 - ui.lua
 - neo-tree.lua
 - colorscheme.lua
+
+## After installing
+```bash
+npm i -g neovim
+npm install -g tree-sitter-cli
+```
