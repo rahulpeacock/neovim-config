@@ -96,6 +96,21 @@ function M.get_typescript_server_path(root_dir)
       return typescript_path .. '/lib'
     end
   end
+
+  -- 2) Fallback to global npm: $(npm root -g)/typescript/lib
+  --    (The server expects a directory containing `typescript.js` / `tsserverlibrary.js`.)
+  local ok, out = pcall(vim.fn.system, { 'npm', 'root', '-g' })
+  if ok and type(out) == 'string' then
+    local global_root = vim.trim(out)
+    if global_root ~= '' then
+      local tsdk = vim.fs.joinpath(global_root, 'typescript', 'lib')
+      local stat = vim.uv.fs_stat(tsdk)
+      if stat and stat.type == 'directory' then
+        return tsdk
+      end
+    end
+  end
+
   return ''
 end
 
